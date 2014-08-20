@@ -1,0 +1,50 @@
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+body {
+  font-family: Helvetica, sans-serif; }
+  body div.content {
+    width: 100%;
+    position: relative; }
+    body div.content div#project-list {
+      width: 60%;
+      float: left;
+      color: #5c6068;
+      background-color: #efefef;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      padding: 5px; }
+      body div.content div#project-list p.error {
+        color: red;
+        font-weight: bold;
+        position: relative;
+        left: 5px; }
+      body div.content div#project-list ul {
+        list-style: none; }
+        body div.content div#project-list ul li {
+          cursor: pointer; }
+          body div.content div#project-list ul li:hover {
+            color: #ff6600; }
+    body div.content table#project-detail {
+      position: fixed;
+      width: 30%;
+      right: 5px;
+      top: 20px;
+      padding: 5px;
+      color: #606362;
+      background-color: #b5d42b;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+      body div.content table#project-detail thead {
+        float: left;
+        color: ghostwhite;
+        width: 100%; }
+      body div.content table#project-detail tr > td:first-child {
+        font-style: italic; }

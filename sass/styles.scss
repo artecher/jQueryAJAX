@@ -1,0 +1,59 @@
+@import "partials/constants";
+@import "partials/commons";
+
+body {
+  font-family: Helvetica, sans-serif;
+  div.content {
+    width: 100%;
+    position: relative;
+    div#project-list {
+      width: 60%;
+      float: left;
+      color: $color-font-gray;
+      background-color: $color-bg-lgray;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      padding:5px;
+      p.error{
+        color: red;
+        font-weight: bold;
+        position: relative;
+        left:5px;
+      }
+      ul {
+        list-style: none;
+        li {
+          &:hover {
+            color: $color-font-orange;
+          }
+          cursor: pointer;
+        }
+      }
+
+    }
+
+    table#project-detail {
+      position: fixed;
+      width: 30%;
+      right: 5px;
+      top: 20px;
+      padding: 5px;
+      color: $color-font-lgray;
+      background-color: $color-bg-green;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      thead {
+        float: left;
+        color: ghostwhite;
+        width:100%;
+      }
+      tr > td:first-child {
+        font-style: italic;
+      }
+    }
+  }
+
+}
+
